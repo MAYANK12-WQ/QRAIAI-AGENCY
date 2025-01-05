@@ -1,0 +1,21 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B0082;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <g filter="url(#glow)">
+    <path d="M256 64C150.5 64 64 150.5 64 256C64 361.5 150.5 448 256 448C361.5 448 448 361.5 448 256C448 150.5 361.5 64 256 64ZM256 384C186.5 384 128 325.5 128 256C128 186.5 186.5 128 256 128C325.5 128 384 186.5 384 256C384 325.5 325.5 384 256 384Z" fill="url(#logoGradient)"/>
+    <path d="M256 192C220.7 192 192 220.7 192 256C192 291.3 220.7 320 256 320C291.3 320 320 291.3 320 256C320 220.7 291.3 192 256 192Z" fill="url(#logoGradient)"/>
+    <path d="M256 224C238.3 224 224 238.3 224 256C224 273.7 238.3 288 256 288C273.7 288 288 273.7 288 256C288 238.3 273.7 224 256 224Z" fill="url(#logoGradient)"/>
+  </g>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</svg>
